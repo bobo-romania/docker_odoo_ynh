@@ -12,14 +12,14 @@ password=$4
 # volume -> "Yes" to mount /home/yunohost.docker/container-app as /home/yunohost in the container
 # command -> the command to run the container
 
-app=dockerrstudio
-repository="rocker/rstudio" #
+app=dockerodoo
+repository="xcgd/odoo" #
 autostart="Yes"
-volume="Yes"
-command="-p 8787:8787 -e USER=$user -e PASSWORD=$password"
+volume="No"
+command="-p 8069:8069 --rm --name="xcgd.odoo" --link pg93:db"
 
 # COPY PASTE THE FOLLOWING for all the ports you forward to your host
-sudo yunohost app checkport 8787
+sudo yunohost app checkport 8069
 if [[ ! $? -eq 0 ]]; then
   exit 1
 fi
