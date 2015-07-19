@@ -6,4 +6,10 @@ See https://github.com/scith/dockerui_ynh to manage your container without the S
 
 This app relies on odoo "Rocker" image: https://github.com/rocker-org/rocker
 
-This app is based on Scith's work 
+This app is based on Scith's work and xcgd's work.
+https://registry.hub.docker.com/u/xcgd/odoo/
+
+# Conditions 
+*having a running postgres docker 
+
+
