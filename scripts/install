@@ -13,10 +13,10 @@ password=$4
 # command -> the command to run the container
 
 app=dockerodoo
-repository="xcgd/odoo" #
+repository="odoo" #
 autostart="Yes"
 volume="No"
-command="-p 8069:8069 --rm --name="xcgd.odoo" --link pg93:db"
+command="-p 127.0.0.1:8069:8069 --name odoo --link db:db -t"
 
 # COPY PASTE THE FOLLOWING for all the ports you forward to your host
 sudo yunohost app checkport 8069
